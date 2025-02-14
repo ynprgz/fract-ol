@@ -6,8 +6,13 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 20:11:25 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/11 23:03:02 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/14 07:49:41 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/fractol.h"
+
+void	mandelbrot(t_data *f)
+{
+
+}

@@ -6,8 +6,13 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 20:11:34 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/11 23:02:59 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/14 07:49:53 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/fractol.h"
+
+void	burningship(t_data *f)
+{
+
+}
