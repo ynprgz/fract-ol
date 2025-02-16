@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 20:11:12 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/14 08:27:01 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/15 13:00:58 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,4 +60,15 @@ int	ft_strncmp(const char *s1, const char *s2, size_t count)
 		&& s1[i] == s2[i] && (i < count - 1))
 		i++;
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+}
+
+void	put_message(void)
+{
+	ft_putendl_fd("\n+===================================================+", 1);
+	ft_putendl_fd("|                    FRACT'OL                       |", 1);
+	ft_putendl_fd("+===================================================+\n", 1);
+	ft_putendl_fd("\n    Correct usage: './fractol <fractal code>'.\n", 1);
+	ft_putendl_fd("    Available: Mandelbrot, Julia and Burningship.\n", 1);
+	ft_putendl_fd("    The codes are 1, 2 and 3 respectively.\n\n", 1);
+	ft_putendl_fd("+===================================================+\n", 1);
 }

@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 07:47:11 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/15 10:07:51 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/15 14:10:09 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@ void	draw_fractal(t_data *f)
 				// mandelbrot(f);
 				put_pixel(f, f->x, f->y, 0xFF5733);
 			}
-			if (f->f_code == 2)
+			else if (f->f_code == 2)
 			{
 				// julia(f);
 				put_pixel(f, f->x, f->y, 0x4CAF50);
 			}
-			if (f->f_code == 3)
+			else if (f->f_code == 3)
 			{
 				// burningship(f);
 				put_pixel(f, f->x, f->y, 0x3A6EA5);
