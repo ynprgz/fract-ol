@@ -5,14 +5,15 @@ This project is about creating graphically beautiful fractals.
 
 My personal selection to generate beautiful fractals:
 
-- tomato      = 0xFF6347; // Tomato: vibrant red with an orange touch
-- deepSkyBlue = 0x00BFFF; // Deep sky blue: a bright and refreshing blue
-- mediumPurple= 0x9370DB; // Medium purple: a soft and elegant purple
-- springGreen = 0x00FF7F; // Spring green: a fresh and luminous green
-- gold        = 0xFFD700; // Gold: brings warmth and brightness
-- crimson     = 0xDC143C; // Crimson: an intense and deep red
-- orange      = 0xFFA500; // Orange: vibrant and energetic
-- hotPink     = 0xFF69B4; // Hot pink: striking and modern
+- **tomato**      = 0xFF6347;  // Vibrant red with an orange touch
+- **deepSkyBlue** = 0x00BFFF;  // Bright and refreshing blue
+- **mediumPurple**= 0x9370DB;  // Soft and elegant purple
+- **springGreen** = 0x00FF7F;  // Fresh and luminous green
+- **gold**        = 0xFFD700;  // Warm and bright yellow
+- **crimson**     = 0xDC143C;  // Intense and deep red
+- **orange**      = 0xFFA500;  // Vibrant and energetic
+- **hotPink**     = 0xFF69B4;  // Striking and modern pink
+
 
 ## Beautiful Julia Set Constants
 
