@@ -6,14 +6,14 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 22:09:51 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/18 12:17:39 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/18 12:49:38 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FRACTOL_H
 # define FRACTOL_H
 
-# include "../MiniLibX/mlx.h"
+# include "../minilibx-linux/mlx.h"
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
