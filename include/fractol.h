@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 22:09:51 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/16 05:36:09 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/18 12:17:39 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <math.h>
 
 # define HEIGHT 800
 # define WIDTH 800
@@ -35,10 +36,16 @@ typedef struct s_data
 	int		endian;
 	int		x;
 	int		y;
-	double	zx;
-	double	zy;
-	double	cx;
-	double	cy;
+	double	min_re;
+	double	max_re;
+	double	min_im;
+	double	max_im;
+	double	re_factor;
+	double	im_factor;
+	double	z_re;
+	double	z_im;
+	double	c_re;
+	double	c_im;
 }	t_data;
 
 // utils.c
@@ -62,5 +69,7 @@ void	julia(t_data *f);
 // burningship.c
 void	burningship(t_data *f);
 
+// pixel_to_complexplane.c
+void	pixel_to_complexplane(t_data *f);
 
 #endif

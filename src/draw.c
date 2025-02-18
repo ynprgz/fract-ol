@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 07:47:11 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/15 14:10:09 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/18 10:48:22 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,26 @@
 
 void	draw_fractal(t_data *f)
 {
-	f->x = 0;
 	f->y = 0;
-	while (f->x < HEIGHT)
+	while (f->y < HEIGHT)
 	{
-		while (f->y < WIDTH)
+		f->x = 0;
+		while (f->x < WIDTH)
 		{
+			pixel_to_complexplane(f);
+			if (f->f_code == 1 || f->f_code == 3)
+			{
+				f->c_re = f->min_re + f->x * f->re_factor;
+				f->c_im = f->max_im - f->y * f->im_factor;
+			}
 			if (f->f_code == 1)
-			{
-				// mandelbrot(f);
-				put_pixel(f, f->x, f->y, 0xFF5733);
-			}
+				mandelbrot(f);
 			else if (f->f_code == 2)
-			{
-				// julia(f);
-				put_pixel(f, f->x, f->y, 0x4CAF50);
-			}
+				julia(f);
 			else if (f->f_code == 3)
-			{
-				// burningship(f);
-				put_pixel(f, f->x, f->y, 0x3A6EA5);
-			}
-			(f->y)++;
+				burningship(f);
+			f->x++;
 		}
-		f->y = 0;
-		(f->x)++;
+		f->y++;
 	}
 }

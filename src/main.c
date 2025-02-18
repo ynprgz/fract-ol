@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 16:34:14 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/16 05:03:05 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/18 12:26:35 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,12 @@ void	init_data(t_data *f, char *code)
 	f->addr = mlx_get_data_addr(f->image, &f->bpp, &f->line_length, &f->endian);
 	f->max_iters = 50;
 	f->f_code = (code[0] - '0');
-	f->color = 0xFCBE11;
+	if (f->f_code == 2)
+	{
+		f->c_re = -0.8;
+		f->c_im = 0.156;
+	}
+	f->color = 0xFFD700;
 	draw_fractal(f);
 	mlx_put_image_to_window(f->mlx, f->window, f->image, 0, 0);
 	mlx_loop(f->mlx);
@@ -44,7 +49,7 @@ int	main(int argc, char **argv)
 	}
 	f = malloc(sizeof(t_data));
 	if (!f)
-		return(1);
+		return (1);
 	init_data(f, argv[1]);
 	return (0);
 }
