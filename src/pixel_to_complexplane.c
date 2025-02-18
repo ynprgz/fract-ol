@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 05:04:55 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/18 12:28:29 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/18 12:51:40 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@
 
 void	pixel_to_complexplane(t_data *f)
 {
-	f->min_re = -2;
-	f->max_re = 2;
-	f->min_im = -2;
+	f->min_re = -1.5;
+	f->max_re = 1.5;
+	f->min_im = -1.5;
 	f->max_im = f->min_im + (f->max_re - f->min_re) * HEIGHT / WIDTH;
 	f->re_factor = (f->max_re - f->min_re) / (WIDTH - 1);
 	f->im_factor = (f->max_im - f->min_im) / (HEIGHT - 1);
