@@ -56,7 +56,7 @@ My personal selection to generate beautiful fractals:
 
 ## When cloning
 
-To download submodule too.
+To download MiniLibX submodule.
 
 ```bash
 git clone --recurse-submodules <URL_DEL_REPO>
