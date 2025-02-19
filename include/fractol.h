@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 22:09:51 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/18 12:49:38 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/19 09:18:10 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ typedef struct s_data
 // utils.c
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
-int		ft_strncmp(const char *s1, const char *s2, size_t count);
+void	set(t_data *f, char *one, char *two);
 void	put_message(void);
 
 // print_pixels.c
