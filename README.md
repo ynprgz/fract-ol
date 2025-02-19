@@ -54,7 +54,9 @@ My personal selection to generate beautiful fractals:
 - [Mandelbrot](http://warp.povusers.org/Mandelbrot/)
 
 
-### When cloning
+## When cloning
+
+To download submodule too.
 
 ```bash
 git clone --recurse-submodules <URL_DEL_REPO>
