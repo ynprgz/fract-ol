@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 20:11:12 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/15 13:00:58 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/19 07:47:06 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,35 +40,41 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putchar_fd('\n', fd);
 }
 
-/**
- * @brief Compare string until count count position is reached
- *
- * @param s1 First string to compare
- * @param s2 Second string to compare
- * @param count Number of characters to compare
- *
- * @return == 0 if equal
- */
-int	ft_strncmp(const char *s1, const char *s2, size_t count)
-{
-	size_t	i;
-
-	i = 0;
-	if (count == 0)
-		return (0);
-	while (s1[i] != '\0' && s2[i] != '\0'
-		&& s1[i] == s2[i] && (i < count - 1))
-		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-}
-
 void	put_message(void)
 {
 	ft_putendl_fd("\n+===================================================+", 1);
 	ft_putendl_fd("|                    FRACT'OL                       |", 1);
 	ft_putendl_fd("+===================================================+\n", 1);
-	ft_putendl_fd("\n    Correct usage: './fractol <fractal code>'.\n", 1);
-	ft_putendl_fd("    Available: Mandelbrot, Julia and Burningship.\n", 1);
-	ft_putendl_fd("    The codes are 1, 2 and 3 respectively.\n\n", 1);
+	ft_putendl_fd("\n   Usage: ./fractol <fractal code> <type>.\n", 1);
+	ft_putendl_fd("   Available: Mandelbrot, Julia and Burningship.\n", 1);
+	ft_putendl_fd("   The codes are 1, 2 and 3 respectively.\n", 1);
+	ft_putendl_fd("   You can choose between different types of Julia\n", 1);
+	ft_putendl_fd("   The types are 0, 1, 2 and 3 respectively\n", 1);
+	ft_putendl_fd("   Type '0' is the standard for available fractals\n\n", 1);
 	ft_putendl_fd("+===================================================+\n", 1);
+}
+
+void	set(t_data *f, char *one, char *two)
+{
+	f->f_code = (one[0] - '0');
+	if (two[0] == '0')
+	{
+		f->c_re = -0.8;
+		f->c_im = 0.156;
+	}
+	else if (two[0] == '1')
+	{
+		f->c_re = -0.4;
+		f->c_im = 0.6;
+	}
+	else if (two[0] == '2')
+	{
+		f->c_re = -0.7269;
+		f->c_im = 0.1889;
+	}
+	else if (two[0] == '3')
+	{
+		f->c_re = 0.285;
+		f->c_im = 0.01;
+	}
 }
