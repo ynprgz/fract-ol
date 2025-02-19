@@ -13,6 +13,7 @@ My personal selection to generate beautiful fractals:
 - **crimson**     = 0xDC143C;  // Intense and deep red
 - **orange**      = 0xFFA500;  // Vibrant and energetic
 - **hotPink**     = 0xFF69B4;  // Striking and modern pink
+- **Psychedelic** = 0xFCBE11;  // Multicolor psychedelic
 
 
 ## Beautiful Julia Set Constants
@@ -51,3 +52,11 @@ My personal selection to generate beautiful fractals:
 
 - [Fractal Foundation](https://fractalfoundation.org/fractivities/FractalPacks-EducatorsGuide.pdf)
 - [Mandelbrot](http://warp.povusers.org/Mandelbrot/)
+
+
+### When cloning
+
+```bash
+git clone --recurse-submodules <URL_DEL_REPO>
+
+
