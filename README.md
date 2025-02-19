@@ -5,6 +5,7 @@ This project is about creating graphically beautiful fractals.
 
 My personal selection to generate beautiful fractals:
 
+- **DEMON**       = 0x880808;  // Blood vibes
 - **tomato**      = 0xFF6347;  // Vibrant red with an orange touch
 - **deepSkyBlue** = 0x00BFFF;  // Bright and refreshing blue
 - **mediumPurple**= 0x9370DB;  // Soft and elegant purple
