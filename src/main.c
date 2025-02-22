@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 16:34:14 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/19 09:18:03 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/22 11:23:14 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 /**
  * @brief Initalize variables values and MiniLibX instance
+ * @param code argv[1] for fractal type
+ * @param type argv[2] for julia fractal type
  */
 void	init_data(t_data *f, char *code, char *type)
 {
