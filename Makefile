@@ -6,7 +6,7 @@
 #    By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/15 13:12:26 by yaperalt          #+#    #+#              #
-#    Updated: 2025/02/25 14:46:49 by yaperalt         ###   ########.fr        #
+#    Updated: 2025/02/25 14:56:01 by yaperalt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,10 @@ MLXPATH = minilibx-linux/
 MLXLIB = $(MLXPATH)libmlx_Linux.a
 MLXFLAGS = -lX11 -lXext -lXrandr -lXrender -lXfixes -lXcursor
 
-all: $(NAME)
+all: $(MLXLIB) $(NAME)
+
+$(MLXLIB):
+	@$(MAKE) -C $(MLXPATH)
 
 obj:
 	@mkdir -p obj
@@ -36,6 +39,7 @@ $(NAME): $(OBJS)
 
 clean:
 	@$(RM) obj
+	@$(MAKE) -C $(MLXPATH) clean
 
 fclean: clean
 	@$(RM) $(NAME)
