@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 20:11:12 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/19 07:47:06 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/25 13:37:49 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,4 +77,14 @@ void	set(t_data *f, char *one, char *two)
 		f->c_re = 0.285;
 		f->c_im = 0.01;
 	}
+}
+
+int	exit_program(t_data *f)
+{
+	ft_putendl_fd("\n\nExiting fract-ol... \n\n", 1);
+	mlx_destroy_image(f->mlx, f->image);
+	mlx_destroy_window(f->mlx, f->window);
+	free(f->mlx);
+	free(f);
+	exit(0);
 }
