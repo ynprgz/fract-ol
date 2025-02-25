@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 07:47:11 by yaperalt          #+#    #+#             */
-/*   Updated: 2025/02/19 07:42:11 by yaperalt         ###   ########.fr       */
+/*   Updated: 2025/02/25 13:05:42 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	draw_fractal(t_data *f)
 {
 	f->y = 0;
+	mlx_clear_window(f->mlx, f->window);
 	while (f->y < HEIGHT)
 	{
 		f->x = 0;
